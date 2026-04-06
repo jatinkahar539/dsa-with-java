@@ -7,5 +7,8 @@ public class createlist{
         list.add(19);
         list.add(10);
         System.out.println(list);
+        System.out.println(list.contains(50));
+        System.out.println(list.contains(10));
+
     }
 }
