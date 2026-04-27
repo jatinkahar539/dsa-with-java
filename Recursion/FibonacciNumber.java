@@ -3,14 +3,14 @@ public class FibonacciNumber{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        fab(n);
+        int rev=fab(n);
+        System.out.print(rev);
     }
-    public static void fab(int n){
+    public static int fab(int n){
         if(n<=1){
-            return;
+            return n;
         }
-       int last=(n-1);
-        int slast=(n-2);
-        return (last + slast);
+      
+        return  fab(n-1) + fab(n-2);
     }
 }
