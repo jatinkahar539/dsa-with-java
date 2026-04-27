@@ -10,7 +10,8 @@ public class FibonacciNumber{
         if(n<=1){
             return n;
         }
-      
-        return  fab(n-1) + fab(n-2);
+       int last=fab(n-1);
+        int slast=fab(n-2);
+        return (last + slast);
     }
 }
